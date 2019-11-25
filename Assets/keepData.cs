@@ -7,12 +7,12 @@ using UnityEngine.UI;// added
 
 public class keepData : MonoBehaviour
 {
-    public static string PlayerName = "Anonymous";
-    public static int PlayerLives;
+    public static string PlayerName = "Pasch";
+    public static Text PlayerLives;
     public static int PlayerScore;// link to the old game somehow?
     public static int HighScore = 0;
-    public static float PlayerSpeed;
-    public static int RoundsPlayed = 0;
+    public static float PlayerSpeed ;
+    public static int RoundsPlayed;
 
     public InputField PlayerNameInput;
     public Slider PlayerSpeedSlider;
@@ -33,7 +33,7 @@ public class keepData : MonoBehaviour
     }
     public void SetLives()
     {
-        PlayerLives = PlayerLivesDropdown.value;
+        PlayerLives = PlayerLivesDropdown.captionText;
     }
     public void ChangeSpeed()
     {

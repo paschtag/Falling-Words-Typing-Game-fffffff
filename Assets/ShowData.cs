@@ -12,16 +12,16 @@ public class ShowData : MonoBehaviour
     public Text PanelHighScoreText;
     public Text PanelRoundsPlayedText;
 
-    private void Awake()
+    public void Awake()
     {
        PanelNameText.text = keepData.PlayerName;
        PanelLivesText.text = keepData.PlayerLives.ToString();
         PanelSpeedText.text = keepData.PlayerSpeed.ToString();
-     //   PanelHighScoreText.text = "High: " + keepData.HighScore.ToString();
-      // PanelRoundsPlayedText.text = "Rounds: " + keepData.RoundsPlayed.ToString();
+       PanelHighScoreText.text = "High: " + keepData.HighScore.ToString();
+      PanelRoundsPlayedText.text = "Rounds: " + keepData.RoundsPlayed.ToString();
     }
-    private void Update()
+    public void Update()
     {
-       // PanelScoreText.text = Score.PinCount.ToString();
+      //  PanelScoreText.text = WordManager.score.ToString;
     }
 }
